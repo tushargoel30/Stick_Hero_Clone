@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mygame.EndGame">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/pause_bg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="homeButton" layoutX="213.0" layoutY="464.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="37.0" style="-fx-background-radius: 15;">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/home_trans.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="285.0" layoutY="169.0" prefHeight="231.0" prefWidth="368.0" style="-fx-background-color: #6EABC3; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="score" layoutX="154.0" layoutY="57.0" prefHeight="55.0" prefWidth="71.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="113.0" prefHeight="35.0" prefWidth="93.0" text="BEST">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="highScore" layoutX="154.0" layoutY="155.0" prefHeight="55.0" prefWidth="58.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="303.0" layoutY="67.0" prefHeight="83.0" prefWidth="332.0" text=" GAME OVER!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="182.0" prefHeight="35.0" prefWidth="93.0" text="SCORE">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="retryButton" layoutX="653.0" layoutY="464.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="37.0" style="-fx-background-radius: 15;">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/retry_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="reviveButton" layoutX="428.0" layoutY="464.0" mnemonicParsing="false" onAction="#revivePlayer" prefHeight="35.0" prefWidth="37.0" style="-fx-background-radius: 15;">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/revive.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
